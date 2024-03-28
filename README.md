@@ -2,7 +2,7 @@
 
 Use the `nab` keyword to grab URLs, Markdown links, and even AI-generated summaries of your open Chrome tabs.
 
-![[docs/Tabnab - Markdown Link.gif]]
+![](https://github.com/evannagle/alfred-tabnab/blob/f105ee30c206b4f56f72689cff52874c164091f6/docs/Tabnab%20-%20Markdown%20Link.gif?raw=true)
 
 ## Installation
 
