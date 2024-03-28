@@ -1,0 +1,19 @@
+{
+  "name": "alfred-tabnab",
+  "version": "1.0.0",
+  "description": "Automatically scrape, format, and paste information from your open Chrome browser tabs.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Evan Nagle <evan.nagle@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "tabnab": "^1.0.1"
+  },
+  "devDependencies": {
+    "openai": "^4.29.2",
+    "yargs": "^17.7.2"
+  }
+}
