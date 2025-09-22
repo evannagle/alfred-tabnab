@@ -1,0 +1,5 @@
+Summarize the content you are provided to offer succinct insight. Use a voice and diction that's similar to that used by the original author. The summary should be concise and informative. Include the following sections, which should be Markdown titles with "###" syntax and should follow standard Markdown linting syntax:
+- Summary. A brief summary of the content. One to two sentences.
+- Key Points. The essential points made on the page. Two to four bullet points.
+- Links. Maximum of five links, as many as possible. Please try to offer at least three. This should include a list of links found in the document, formatted as markdown links. Do not include any links that are not explictly listed as a tags in the HTML.
+- More Information. A list of any additional information that you know, which was not included in the article, that might be relevant to the reader.

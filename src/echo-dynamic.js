@@ -1,6 +1,12 @@
-import { getChromeTabs } from "tabnab";
+import { getActiveChromeTab, getChromeTabs } from "tabnab";
 import yargs from 'yargs';
 import { OpenAI } from 'openai';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const argv = yargs(
     process.argv.slice(2)
@@ -8,6 +14,11 @@ const argv = yargs(
     .option('url', {
         alias: 'u',
         description: 'The URL of the tab',
+        type: 'string',
+    })
+    .option('instructions', {
+        alias: 'i',
+        description: 'Instructions to send to the AI',
         type: 'string',
     })
     .help()
@@ -45,7 +56,7 @@ function stripSource(source) {
     return source;
 }
 
-async function summarizeTab(tab) {
+async function summarizeTab(tab, instructions) {
     const openai = new OpenAI({
         apiKey: process.env.OPENAI_API_KEY
     });
@@ -58,13 +69,7 @@ async function summarizeTab(tab) {
         messages: [
             {
                 "role": "system",
-                "content": `
-                    Summarize the content you are provided to offer succinct insight. Use a voice and diction that's similar to that used by the original author. The summary should be concise and informative. Include the following sections, which should be Markdown titles with "###" syntax and should follow standard Markdown linting syntax:
-                    - Summary. A brief summary of the content. One to two sentences.
-                    - Key Points. The essential points made on the page. Two to four bullet points.
-                    - Links. Maximum of five links, as many as possible. Please try to offer at least three. This should include a list of links found in the document, formatted as markdown links. Do not include any links that are not explictly listed as a tags in the HTML.
-                    - More Information. A list of any additional information that you know, which was not included in the article, that might be relevant to the reader.
-                `
+                "content": instructions
             },
             {
                 "role": "user",
@@ -85,13 +90,29 @@ async function summarizeTab(tab) {
 }
 
 
-getChromeTabs().then(async tabs => {
-    const tab = tabs.find(tab => tab.url.toString() === argv.url);
+const tab = argv.url ?
+    await getActiveChromeTab().find(tab => tab.url.toString() === argv.url) :
+    await getActiveChromeTab();
 
-    if (!tab) {
-        console.log('Tab not found');
-        return;
-    }
+// if (!argv.url) {
+//     tab = await getActiveChromeTab();
+// } else {
+//     const tabs = await getChromeTabs();
+//     tab = tabs.find(tab => tab.url.toString() === argv.url);
+// }
 
-    console.log(await summarizeTab(tab));
-});
+// getChromeTabs().then(async tabs => {
+//     const tab = tabs.find(tab => tab.url.toString() === argv.url);
+
+if (!tab) {
+    console.log('Tab not found');
+    exit(1);
+}
+
+// make relative to this dir
+// const intructionsPath = path.resolve(path.dirname(__filename), argv.instructions);
+const instructionRelFileName = argv.instructions ?? 'summary';
+const instructionPath = path.resolve(__dirname, `instructions/${instructionRelFileName}.txt`);
+const instructions = fs.readFileSync(instructionPath, 'utf8');
+
+await summarizeTab(tab, instructions).then(console.log);

@@ -1,0 +1,20 @@
+The following page shows a location of interest that I would someday like to travel to. 
+
+Include in your response the description of the place, an address, and any other pertinent information.
+
+With your response:
+
+- Ensure that every line begins with a "> "
+- Make sure to include empty "> " lines between each paragraph.
+- Include the address as a link to Google Maps.
+- Include a street view Google Map embed. **Make sure the embed has a width of 100% and a height of 400px.**
+
+For example, if the page was describing George Nakashima and his home in New Hope, Pennsylvania, your response should be:
+
+> [!place] George Nakashima's Studio
+> Address:: [1847 Aquetong Rd, New Hope, PA 18938](https://maps.app.goo.gl/hdgeDxjCBEJQbyDu7)
+>
+> The George Nakashima House, Studio and Workshop is a historic artist's compound at 1847 and 1858 Aquetong Rd. in Solebury Township, Bucks County, Pennsylvania. The compound consists of houses and studio buildings designed and built by artist George Nakashima (1905-1990), which served as family homes and as his studio space.
+>
+> <iframe src="https://www.google.com/maps/embed?pb=!4v1739828919755!6m8!1m7!1su3vxqFT-WynCW93iDGM5qQ!2m2!1d40.34050754398306!2d-74.95495658962685!3f234.69365!4f0!5f0.7820865974627469" style="border:0;" allowfullscreen="" loading="lazy" width="100%" height="400px" referrerpolicy="no-referrer-when-downgrade" style="display:block; margin:0; padding:0;"></iframe>
+

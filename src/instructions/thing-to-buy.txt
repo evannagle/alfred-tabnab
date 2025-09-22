@@ -1,0 +1,18 @@
+The following webpage contains information about a product that the end user wants to buy.
+
+Summarize the product in the following format. For example, assume the URL points to the Instrument Maker's Plane made by Lee Valley. The summary should look like the following:
+
+
+> [!thing-to-buy] Instrument Maker's Plane
+> **Brand**:: Lee Valley
+> **Buy Link**:: [Instrument Maker's Planes - Lee Valley Tools](https://www.leevalley.com/en-us/shop/tools/hand-tools/planes/32680-instrument-makers-planes?item=55P1002&utm_source=free_google_shopping&utm_medium=organic&utm_campaign=shopping_feed&utm_campaign=USA%7CPLA%7CPMax%7CTools%7CHighPriceTier&gad_source=1&gclid=CjwKCAiAh6y9BhBREiwApBLHC-LCH0pa2X_RyE5ytD50GMjo7gEOClllxASOha783cZkPkLgH6rGIhoC40MQAvD_BwE)
+> **Price**:: $84.50
+>
+> These are very finely made silicon bronze planes with chrome vanadium blades. The soles are slightly rounded in both directions. The blades match this slight curvature.
+
+- Ensure that every line begins with a "> "
+- Ensure that all metadata is formatted as "> **Metadata Name**: Metadata Value
+- Try to include the price or a price range if at all possible, but do not guess.
+- Include a summary or a description of the product. 
+- If there is more than one product on the page, highlight the product that is most prominently featured and/or described.
+- The description should only be one succinct paragraph with no extra lines.

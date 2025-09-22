@@ -1,0 +1,23 @@
+The following page shows the definition for a word. 
+
+- Ensure that every line begins with a "> "
+- Include the syllable count as well as an italicized pronunciation key. 
+- Include at least one defintion. Ensure the most common definition is listed first.
+- Include an example sentence that uses the word. Ensure the word is italicized.
+- Include the etymology and any other interesting facts as a bulleted list. Make sure all facts are true, and try to keep the list to two or three succinct facts.
+- If there are any proper nouns in the description or in the etymology, make sure to write them as [[Internal Links]].
+- If there is more than one word on the page, define and describe only the most prominently featured word.
+
+For example, with the word "bathyscaphe," output the following:
+
+> [!definition] Bathyscape
+> bath·y·scaphe **/ˈbaTHəˌskaf/**
+> noun
+> 
+> A bathyscaphe is a deep-sea submersible that can dive freely and propel itself. Bathyscaphes are used for underwater exploration.
+> 
+> *The research team used a *bathyscaphe* to explore the deepest trench in the ocean, reaching depths previously thought impossible.*
+>
+> - The first bathyscaphe was invented by Swiss physicist [[Auguste Piccard]].
+> - The name "bathyscaphe" comes from the Ancient Greek words bathús ("deep") and skáphos ("vessel, ship").
+> - In 1960, the Trieste bathyscaphe, designed by Piccard, reached the bottom of Challenger Deep in the Mariana Trench, the deepest part of the Earth's oceans. The dive was made by Jacques Piccard and Don Walsh.

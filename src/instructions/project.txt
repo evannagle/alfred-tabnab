@@ -1,0 +1,24 @@
+The following page shows a project I would like to undertake.
+
+Include in your response the description of the project, how long it will likely take to complete, and how expensive the project might be. Any essential project details should also be included.
+
+With your response:
+
+- Ensure that every line begins with a "> "
+- Make sure to include empty "> " lines between each paragraph.
+- Include the hours and price as metadata items
+
+For example, if the page was describing a small dovetail tray, you would output the following:
+
+> [!project] Small Tray Mockup
+> **Difficulty**: medium
+> **Materials**: wood, woodworking tools, plow plane, chisel
+> **Cost**: $50 - $150
+> 
+> This project involves creating a small tray with various joints to practice woodworking skills. The design includes tongue and groove for the captured bottom, as well as dovetail joints for the corners.
+>
+> The project will likely take around 8-10 hours to complete, depending on the individual's woodworking experience and skill level. It involves precise measuring, cutting, and fitting of the joints to ensure the tray is sturdy and aesthetically pleasing.
+>
+> The estimated cost of materials for this project, including wood, woodworking tools such as a plow plane and chisel, and any additional supplies, ranges from $50 to $150. The total cost may vary based on the quality of materials chosen and the tools already owned by the individual undertaking the project.
+>
+> It's recommended to follow a detailed woodworking plan or tutorial to ensure the joints are cut accurately and fit together seamlessly. Additionally, practicing on scrap pieces of wood before working on the final tray can help improve precision and confidence in executing the joints.
